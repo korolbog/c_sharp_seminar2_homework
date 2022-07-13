@@ -2,10 +2,10 @@
 которая с помощью деления выводит третью цифру заданного числа
 или сообщает, что третьей цифры нет.
 */
-Console.WriteLine("Введите число от 1 до 999:");
+Console.WriteLine("Введите целое положительное число:");
 int number = Convert.ToInt32(Console.ReadLine());
 string result = "";
-if (number < 0 || number > 999)
+if (number < 0)
 {
     Console.WriteLine("Неверное число! Завершите сеанс нажатием любой клавиши.");
     Console.ReadKey();
@@ -17,7 +17,7 @@ else
 {
     result = Convert.ToString(number);
     Console.WriteLine("Третья цифра введенного числа:");
-    Console.WriteLine(result.Remove(result.Length-3, 2));
+    Console.WriteLine(result[2]);
 }
 else
 {
