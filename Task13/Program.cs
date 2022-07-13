@@ -11,9 +11,7 @@ if (number < 0)
     Console.ReadKey();
     return;
 }
-else
-{
-    if (number / 100 > 0)
+if (number / 100 > 0)
 {
     result = Convert.ToString(number);
     Console.WriteLine("Третья цифра введенного числа:");
@@ -22,7 +20,6 @@ else
 else
 {
     Console.WriteLine("Веденое число не имеет третьего знака");
-}
 }
 Console.Write("Нажмите любую клавишу для завершения программы");
 Console.ReadKey();
